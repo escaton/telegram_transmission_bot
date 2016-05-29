@@ -1,0 +1,16 @@
+{
+  "name": "transmission_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.21.1",
+    "prettysize": "0.0.3",
+    "transmission": "^0.4.5"
+  }
+}
