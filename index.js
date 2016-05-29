@@ -61,7 +61,7 @@ bot.onText(/^\/(\d+)$/, function (msg, match) {
         var torrentDetails = result.torrents[0];
         var res = [torrentDetails.name]
         res.push('Size: ' + prettysize(torrentDetails.totalSize));
-        res.push('ETA: ' + (torrentDetails.eta === -1) ? 'Done' : torrentDetails.eta);
+        res.push('ETA: ' + (torrentDetails.eta === -1 ? 'Done' : torrentDetails.eta));
         res.push(startCmd + 'start');
         res.push(startCmd + 'stop');
         res.push(startCmd + 'delete');
